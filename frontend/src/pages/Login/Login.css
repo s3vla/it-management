@@ -1,0 +1,38 @@
+.acesso-tela{
+    position: relative; /* vira a "moldura": o selo se posiciona dentro dela - USE NO PAI - depois: estilizar o filho */
+    
+    min-height: 100vh; /* altura da tela inteira vh = % da altura da janela, sem isso o pai encolhe e nao tem o que centralizar, depois: ligar o flex */
+    display:flex; /* liga o flexbox nos filhos, usar para alinhas filhos, depois: escolher os eixos */
+    justify-content: center; /* centraliza horizonal, eixo principal do flex, depois o vertical */
+    align-items: center; /* centraliza o vertical, eixo cruzado, depois estilizar o filho centrqlizado */
+}
+
+.acesso-topo{
+    position: absolute; /* sai do lugar normal e nãp empurra mais ninguem - use no FILHO - que vai pro canto - depois: dizer qual canto */
+    top: 16px; /* 16px abaixo da borda de cima do cartaz - sempre junto com absolute - depois: o lado */
+    left: 16px; /*  1upx da borda esquerda - top + left = canto de cima, a esquerda - depois: o visual */
+    font-weight: 700; /* negrito - textos de destaque - depois: tamanho, se quiser */
+}
+
+.acesso-card{
+    background: #ffffff;
+    width: 100%;
+    max-width: 1000px;
+    padding: 16px;
+    border-radius: 16px; 
+    box-shadow: 0 10px 30px rgb(6 30 41 / 0.10);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+
+
+.acesso-painel{
+    background: rgb(95 149 152 / 0.10);
+    border-radius: 12px;
+    padding: 32px;
+}
+
+
